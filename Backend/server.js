@@ -12,6 +12,8 @@ app.use(cors());
 // connect mongoose
 
 // create all the routes and mongoDB connections
+app.use(express.json());
+app.use(cors());
 
 //start server
 const PORT = process.env.PORT || 5002;

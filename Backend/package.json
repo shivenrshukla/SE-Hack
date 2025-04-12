@@ -17,9 +17,16 @@
   },
   "homepage": "https://github.com/shivenrshukla/SE-Hack#readme",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.13.2",
-    "node": "^23.11.0"
+    "node": "^23.11.0",
+    "npm": "^11.3.0"
   },
   "keywords": []
 }

@@ -22,12 +22,15 @@ app.get('/', (req, res) => {
 // Routes
 app.use('/api/users', userRoutes);
 //app.use('/api/analysis', analysisRoutes);
-//app.use('/api/payment',paymentRoutes);
+app.use('/api/payment',paymentRoutes);
 // Database Connection
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
+
+//connect Payment DB
+
 .then(() => console.log('MongoDB Connected'))
 .catch((err) => console.error('MongoDB Connection Error:', err));
 
